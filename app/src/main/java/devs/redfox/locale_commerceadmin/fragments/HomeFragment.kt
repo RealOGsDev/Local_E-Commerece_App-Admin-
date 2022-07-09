@@ -32,6 +32,10 @@ class HomeFragment : Fragment() {
         }
 
         binding.button2.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_sliderFragment)
+        }
+
+        binding.button3.setOnClickListener {
             requireContext().startActivity(Intent(requireContext(), AllOrderActivity::class.java))
         }
 

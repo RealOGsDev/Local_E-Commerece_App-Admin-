@@ -3,9 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/LocalECommerceAdmin/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.2015" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LocalECommerceAdmin/app/src/main/res/layout/activity_all_order.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/LocalECommerceAdmin/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/LocalECommerceAdmin/app/src/main/res/layout/fragment_add_product.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LocalECommerceAdmin/app/src/main/res/layout/dropdown_item_layout.xml" value="0.2734375" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LocalECommerceAdmin/app/src/main/res/layout/fragment_add_product.xml" value="0.264" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LocalECommerceAdmin/app/src/main/res/layout/fragment_category.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/User/AndroidStudioProjects/LocalECommerceAdmin/app/src/main/res/layout/fragment_home.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LocalECommerceAdmin/app/src/main/res/layout/fragment_product.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LocalECommerceAdmin/app/src/main/res/layout/fragment_slider.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LocalECommerceAdmin/app/src/main/res/layout/image_item.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LocalECommerceAdmin/app/src/main/res/layout/item_category_layout.xml" value="1.0" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/LocalECommerceAdmin/app/src/main/res/layout/progress_layout.xml" value="0.35103626943005184" />
       </map>
     </option>
   </component>
