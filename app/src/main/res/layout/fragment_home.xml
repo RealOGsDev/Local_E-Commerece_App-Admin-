@@ -51,7 +51,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18dp"
                     android:fontFamily="@font/sofiaprosoftregular"
-                    android:text="Electronics Shop"
+                    android:text="Bengaluru, KS layout"
                     />
 
             </LinearLayout>
