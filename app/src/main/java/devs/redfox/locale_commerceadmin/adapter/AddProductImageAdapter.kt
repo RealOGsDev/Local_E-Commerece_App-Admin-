@@ -16,7 +16,7 @@ class AddProductImageAdapter(val list: ArrayList<Uri>): RecyclerView.Adapter<Add
     }
 
     override fun onBindViewHolder(holder: AddProductImageViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        holder.binding.itemImage.setImageURI(list[position])
     }
 
     override fun getItemCount(): Int {

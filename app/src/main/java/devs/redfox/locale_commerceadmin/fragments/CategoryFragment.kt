@@ -112,7 +112,7 @@ class CategoryFragment : Fragment() {
         val db = Firebase.firestore
 
         val data = hashMapOf<String, Any>(
-            "cate" to categoryName,
+            "cat" to categoryName,
             "img" to url
         )
 
