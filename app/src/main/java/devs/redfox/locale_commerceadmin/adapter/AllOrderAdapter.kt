@@ -26,37 +26,44 @@ class AllOrderAdapter(val list: ArrayList<AllOrderModel>, val context: Context):
         holder.binding.productTitle.text = list[position].name
         holder.binding.productPrice.text = list[position].price
 
+        holder.binding.btnCancel.setOnClickListener {
+            holder.binding.btnDispatched.visibility = GONE
+            updateStatus("Canceled", list[position].orderId!!)
+
+        }
+
         when(list[position].status){
             "Ordered" -> {
-                holder.binding.btnDispatched.text = "Ordered"
-                holder.binding.btnCancel.setOnClickListener {
-                    updateStatus("Canceled", list[position].orderId!!)
-                }
+
+                holder.binding.btnDispatched.text = "Dispatched"
                 holder.binding.btnDispatched.setOnClickListener {
                     updateStatus("Dispatched", list[position].orderId!!)
+
                 }
+
             }
             "Dispatched" -> {
-                holder.binding.btnDispatched.text = "Dispatched"
-                holder.binding.btnCancel.setOnClickListener {
-                    updateStatus("Canceled", list[position].orderId!!)
-                }
+
+                holder.binding.btnDispatched.text = "Delivered"
                 holder.binding.btnDispatched.setOnClickListener {
                     updateStatus("Delivered", list[position].orderId!!)
+
                 }
+
             }
             "Delivered" -> {
+
                 holder.binding.btnCancel.visibility = GONE
-                holder.binding.btnDispatched.text = "Delivered"
-                holder.binding.btnCancel.setOnClickListener {
-                    updateStatus("Canceled", list[position].orderId!!)
-                }
-                holder.binding.btnDispatched.setOnClickListener {
-                    updateStatus("Delivered", list[position].orderId!!)
-                }
+                holder.binding.btnDispatched.isEnabled = false
+                holder.binding.btnDispatched.text = "Already Delivered"
+
+
             }
             "Canceled" -> {
+
                 holder.binding.btnDispatched.visibility = GONE
+                holder.binding.btnCancel.isEnabled = false
+
             }
 
         }
@@ -68,6 +75,8 @@ class AllOrderAdapter(val list: ArrayList<AllOrderModel>, val context: Context):
         Firebase.firestore.collection("allOrders")
             .document(doc).update(data).addOnSuccessListener {
                 Toast.makeText(context, "Status Updated", Toast.LENGTH_SHORT).show()
+            }.addOnFailureListener {
+                Toast.makeText(context, it.message, Toast.LENGTH_SHORT).show()
             }
     }
 
